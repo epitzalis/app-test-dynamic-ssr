@@ -1,0 +1,9 @@
+<ng-container *ngIf="resp">
+  <p>
+    {{resp.title}}
+  </p>
+  <p>
+    {{resp.ld?.address}}
+  </p>
+  <img [src]="resp.favIcon" width="200px">
+</ng-container>
