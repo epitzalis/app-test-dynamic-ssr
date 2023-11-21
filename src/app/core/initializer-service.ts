@@ -25,7 +25,7 @@ export class InitializerService {
 
  initializeApp(origin: string): Observable<any> {
     // return this.http.get(`http://localhost:3000/config`, 
-    return this.http.get(`https://snazzy-cascaron-3e9558.netlify.app:3000/config`, 
+    return this.http.get(`https://api-test-ssr.onrender.com/config`, 
             { headers: { 'Client-Domain'  : origin }})
     // return this.http.get(`http://localhost:60765/api/notify`, { headers: { Test  : origin }})
     // return this.http.get('http://localhost:8080/api/bo/v1/config', { headers: { Test  : origin }})
